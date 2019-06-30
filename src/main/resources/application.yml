@@ -1,0 +1,37 @@
+﻿server:
+  port: 8081
+spring:
+  application:
+    name: restful-api-demo
+  devtools:
+    restart:
+      enabled: true
+  # redis作为缓存
+  cache:
+    type: redis
+  # redis
+  redis:
+    database: 0
+    host: localhost
+    port: 6379
+    password: 
+    timeout: 0
+    pool:
+      max-active: 8
+      max-wait: -1
+      min-idle: 0
+      max-idle: 8
+
+#swagger 配置
+swagger: 
+  title: API示例
+  desc: 基于springBoot编写的RESful-API
+  version: 0.0.1.SNAPSHOT
+  termsOfServiceUrl: javascript:void(0)
+  license: Apache 2.0
+  licenseUrl: http://www.apache.org/licenses/LICENSE-2.0.html
+  basePackage: com.restful.api.demo.web
+  groupName: 默认API示例分组
+  contactName: wendell
+  contactUrl: https://github.com/wendell-dev/restful-api-demo.git
+  contactEmail: 727169395@qq.com
